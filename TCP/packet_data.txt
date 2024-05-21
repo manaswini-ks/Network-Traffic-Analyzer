@@ -1,0 +1,996 @@
+Source IP: 34.107.221.82:80, Destination IP: 10.0.2.15:60850, IP Protocol: 6, TTL: 64
+Relative Time: 1714758330.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758330.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.107.221.82:80, Destination IP: 10.0.2.15:60850, IP Protocol: 6
+Classification: Benign
+Source IP: 34.107.221.82:80, Destination IP: 10.0.2.15:60858, IP Protocol: 6, TTL: 64
+Relative Time: 1714758330.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758330.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.107.221.82:80, Destination IP: 10.0.2.15:60858, IP Protocol: 6
+Classification: Benign
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6, TTL: 64
+Relative Time: 1714758330.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758330.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6
+Classification: Benign
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6, TTL: 64
+Relative Time: 1714758330.000000, Frame Length: 93, Packet Size: 93 bytes
+Classification: Benign
+Relative Time: 1714758330.000000, Frame Length: 93, Packet Size: 93 bytes
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6
+Classification: Benign
+Source IP: 34.120.208.123:443, Destination IP: 10.0.2.15:35250, IP Protocol: 6, TTL: 64
+Relative Time: 1714758331.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758331.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.120.208.123:443, Destination IP: 10.0.2.15:35250, IP Protocol: 6
+Classification: Benign
+Source IP: 34.120.208.123:443, Destination IP: 10.0.2.15:35250, IP Protocol: 6, TTL: 64
+Relative Time: 1714758331.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758331.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.120.208.123:443, Destination IP: 10.0.2.15:35250, IP Protocol: 6
+Classification: Benign
+Source IP: 34.120.208.123:443, Destination IP: 10.0.2.15:35250, IP Protocol: 6, TTL: 64
+Relative Time: 1714758331.000000, Frame Length: 175, Packet Size: 175 bytes
+Classification: Benign
+Relative Time: 1714758331.000000, Frame Length: 175, Packet Size: 175 bytes
+Source IP: 34.120.208.123:443, Destination IP: 10.0.2.15:35250, IP Protocol: 6
+Classification: Benign
+Source IP: 34.120.208.123:443, Destination IP: 10.0.2.15:35250, IP Protocol: 6, TTL: 64
+Relative Time: 1714758331.000000, Frame Length: 365, Packet Size: 365 bytes
+Classification: Benign
+Relative Time: 1714758331.000000, Frame Length: 365, Packet Size: 365 bytes
+Source IP: 34.120.208.123:443, Destination IP: 10.0.2.15:35250, IP Protocol: 6
+Classification: Benign
+Source IP: 34.120.208.123:443, Destination IP: 10.0.2.15:35250, IP Protocol: 6, TTL: 64
+Relative Time: 1714758331.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758331.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.120.208.123:443, Destination IP: 10.0.2.15:35250, IP Protocol: 6
+Classification: Benign
+Source IP: 34.120.208.123:443, Destination IP: 10.0.2.15:35250, IP Protocol: 6, TTL: 64
+Relative Time: 1714758333.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758333.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.120.208.123:443, Destination IP: 10.0.2.15:35250, IP Protocol: 6
+Classification: Benign
+Source IP: 34.120.208.123:443, Destination IP: 10.0.2.15:35250, IP Protocol: 6, TTL: 64
+Relative Time: 1714758333.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758333.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.120.208.123:443, Destination IP: 10.0.2.15:35250, IP Protocol: 6
+Classification: Benign
+Source IP: 34.120.208.123:443, Destination IP: 10.0.2.15:35250, IP Protocol: 6, TTL: 64
+Relative Time: 1714758333.000000, Frame Length: 122, Packet Size: 122 bytes
+Classification: Benign
+Relative Time: 1714758333.000000, Frame Length: 122, Packet Size: 122 bytes
+Source IP: 34.120.208.123:443, Destination IP: 10.0.2.15:35250, IP Protocol: 6
+Classification: Benign
+Source IP: 34.120.208.123:443, Destination IP: 10.0.2.15:35250, IP Protocol: 6, TTL: 64
+Relative Time: 1714758333.000000, Frame Length: 325, Packet Size: 325 bytes
+Classification: Benign
+Relative Time: 1714758333.000000, Frame Length: 325, Packet Size: 325 bytes
+Source IP: 34.120.208.123:443, Destination IP: 10.0.2.15:35250, IP Protocol: 6
+Classification: Benign
+Source IP: 34.120.208.123:443, Destination IP: 10.0.2.15:35250, IP Protocol: 6, TTL: 64
+Relative Time: 1714758333.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758333.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.120.208.123:443, Destination IP: 10.0.2.15:35250, IP Protocol: 6
+Classification: Benign
+Source IP: 34.120.208.123:443, Destination IP: 10.0.2.15:35250, IP Protocol: 6, TTL: 64
+Relative Time: 1714758335.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758335.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.120.208.123:443, Destination IP: 10.0.2.15:35250, IP Protocol: 6
+Classification: Benign
+Source IP: 34.120.208.123:443, Destination IP: 10.0.2.15:35250, IP Protocol: 6, TTL: 64
+Relative Time: 1714758335.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758335.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.120.208.123:443, Destination IP: 10.0.2.15:35250, IP Protocol: 6
+Classification: Benign
+Source IP: 34.120.208.123:443, Destination IP: 10.0.2.15:35250, IP Protocol: 6, TTL: 64
+Relative Time: 1714758335.000000, Frame Length: 293, Packet Size: 293 bytes
+Classification: Benign
+Relative Time: 1714758335.000000, Frame Length: 293, Packet Size: 293 bytes
+Source IP: 34.120.208.123:443, Destination IP: 10.0.2.15:35250, IP Protocol: 6
+Classification: Benign
+Source IP: 34.120.208.123:443, Destination IP: 10.0.2.15:35250, IP Protocol: 6, TTL: 64
+Relative Time: 1714758335.000000, Frame Length: 310, Packet Size: 310 bytes
+Classification: Benign
+Relative Time: 1714758335.000000, Frame Length: 310, Packet Size: 310 bytes
+Source IP: 34.120.208.123:443, Destination IP: 10.0.2.15:35250, IP Protocol: 6
+Classification: Benign
+Source IP: 34.120.208.123:443, Destination IP: 10.0.2.15:35250, IP Protocol: 6, TTL: 64
+Relative Time: 1714758335.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758335.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.120.208.123:443, Destination IP: 10.0.2.15:35250, IP Protocol: 6
+Classification: Benign
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6, TTL: 64
+Relative Time: 1714758335.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758335.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6
+Classification: Benign
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6, TTL: 64
+Relative Time: 1714758336.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758336.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6
+Classification: Benign
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6, TTL: 64
+Relative Time: 1714758336.000000, Frame Length: 140, Packet Size: 140 bytes
+Classification: Benign
+Relative Time: 1714758336.000000, Frame Length: 140, Packet Size: 140 bytes
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6
+Classification: Benign
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6, TTL: 64
+Relative Time: 1714758336.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758336.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6
+Classification: Benign
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6, TTL: 64
+Relative Time: 1714758336.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758336.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6
+Classification: Benign
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6, TTL: 64
+Relative Time: 1714758336.000000, Frame Length: 123, Packet Size: 123 bytes
+Classification: Benign
+Relative Time: 1714758336.000000, Frame Length: 123, Packet Size: 123 bytes
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6
+Classification: Benign
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6, TTL: 64
+Relative Time: 1714758336.000000, Frame Length: 140, Packet Size: 140 bytes
+Classification: Benign
+Relative Time: 1714758336.000000, Frame Length: 140, Packet Size: 140 bytes
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6
+Classification: Benign
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6, TTL: 64
+Relative Time: 1714758336.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758336.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6
+Classification: Benign
+Source IP: 34.120.208.123:443, Destination IP: 10.0.2.15:35250, IP Protocol: 6, TTL: 64
+Relative Time: 1714758336.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758336.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.120.208.123:443, Destination IP: 10.0.2.15:35250, IP Protocol: 6
+Classification: Benign
+Source IP: 34.120.208.123:443, Destination IP: 10.0.2.15:35250, IP Protocol: 6, TTL: 64
+Relative Time: 1714758336.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758336.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.120.208.123:443, Destination IP: 10.0.2.15:35250, IP Protocol: 6
+Classification: Benign
+Source IP: 34.120.208.123:443, Destination IP: 10.0.2.15:35250, IP Protocol: 6, TTL: 64
+Relative Time: 1714758336.000000, Frame Length: 123, Packet Size: 123 bytes
+Classification: Benign
+Relative Time: 1714758336.000000, Frame Length: 123, Packet Size: 123 bytes
+Source IP: 34.120.208.123:443, Destination IP: 10.0.2.15:35250, IP Protocol: 6
+Classification: Benign
+Source IP: 34.120.208.123:443, Destination IP: 10.0.2.15:35250, IP Protocol: 6, TTL: 64
+Relative Time: 1714758336.000000, Frame Length: 227, Packet Size: 227 bytes
+Classification: Benign
+Relative Time: 1714758336.000000, Frame Length: 227, Packet Size: 227 bytes
+Source IP: 34.120.208.123:443, Destination IP: 10.0.2.15:35250, IP Protocol: 6
+Classification: Benign
+Source IP: 34.120.208.123:443, Destination IP: 10.0.2.15:35250, IP Protocol: 6, TTL: 64
+Relative Time: 1714758336.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758336.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.120.208.123:443, Destination IP: 10.0.2.15:35250, IP Protocol: 6
+Classification: Benign
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6, TTL: 64
+Relative Time: 1714758339.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758339.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6
+Classification: Benign
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6, TTL: 64
+Relative Time: 1714758339.000000, Frame Length: 140, Packet Size: 140 bytes
+Classification: Benign
+Relative Time: 1714758339.000000, Frame Length: 140, Packet Size: 140 bytes
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6
+Classification: Benign
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6, TTL: 64
+Relative Time: 1714758339.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758339.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6
+Classification: Benign
+Source IP: 34.107.221.82:80, Destination IP: 10.0.2.15:60858, IP Protocol: 6, TTL: 64
+Relative Time: 1714758340.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758340.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.107.221.82:80, Destination IP: 10.0.2.15:60858, IP Protocol: 6
+Classification: Benign
+Source IP: 34.107.221.82:80, Destination IP: 10.0.2.15:60850, IP Protocol: 6, TTL: 64
+Relative Time: 1714758340.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758340.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.107.221.82:80, Destination IP: 10.0.2.15:60850, IP Protocol: 6
+Classification: Benign
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6, TTL: 64
+Relative Time: 1714758340.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758340.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6
+Classification: Benign
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6, TTL: 64
+Relative Time: 1714758340.000000, Frame Length: 139, Packet Size: 139 bytes
+Classification: Benign
+Relative Time: 1714758340.000000, Frame Length: 139, Packet Size: 139 bytes
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6
+Classification: Benign
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6, TTL: 64
+Relative Time: 1714758340.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758340.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6
+Classification: Benign
+Source IP: 34.149.97.1:443, Destination IP: 10.0.2.15:54826, IP Protocol: 6, TTL: 64
+Relative Time: 1714758340.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758340.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.149.97.1:443, Destination IP: 10.0.2.15:54826, IP Protocol: 6
+Classification: Benign
+Source IP: 34.117.188.166:443, Destination IP: 10.0.2.15:34116, IP Protocol: 6, TTL: 64
+Relative Time: 1714758340.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758340.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.117.188.166:443, Destination IP: 10.0.2.15:34116, IP Protocol: 6
+Classification: Benign
+Source IP: 34.149.97.1:443, Destination IP: 10.0.2.15:54826, IP Protocol: 6, TTL: 64
+Relative Time: 1714758340.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758340.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.149.97.1:443, Destination IP: 10.0.2.15:54826, IP Protocol: 6
+Classification: Benign
+Source IP: 34.149.97.1:443, Destination IP: 10.0.2.15:54826, IP Protocol: 6, TTL: 64
+Relative Time: 1714758340.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758340.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.149.97.1:443, Destination IP: 10.0.2.15:54826, IP Protocol: 6
+Classification: Benign
+Source IP: 34.117.188.166:443, Destination IP: 10.0.2.15:34116, IP Protocol: 6, TTL: 64
+Relative Time: 1714758340.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758340.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.117.188.166:443, Destination IP: 10.0.2.15:34116, IP Protocol: 6
+Classification: Benign
+Source IP: 34.117.188.166:443, Destination IP: 10.0.2.15:34116, IP Protocol: 6, TTL: 64
+Relative Time: 1714758340.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758340.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.117.188.166:443, Destination IP: 10.0.2.15:34116, IP Protocol: 6
+Classification: Benign
+Source IP: 34.149.97.1:443, Destination IP: 10.0.2.15:54826, IP Protocol: 6, TTL: 64
+Relative Time: 1714758340.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758340.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.149.97.1:443, Destination IP: 10.0.2.15:54826, IP Protocol: 6
+Classification: Benign
+Source IP: 34.117.188.166:443, Destination IP: 10.0.2.15:34116, IP Protocol: 6, TTL: 64
+Relative Time: 1714758340.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758340.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.117.188.166:443, Destination IP: 10.0.2.15:34116, IP Protocol: 6
+Classification: Benign
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6, TTL: 64
+Relative Time: 1714758341.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758341.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6
+Classification: Benign
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6, TTL: 64
+Relative Time: 1714758341.000000, Frame Length: 139, Packet Size: 139 bytes
+Classification: Benign
+Relative Time: 1714758341.000000, Frame Length: 139, Packet Size: 139 bytes
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6
+Classification: Benign
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6, TTL: 64
+Relative Time: 1714758341.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758341.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6
+Classification: Benign
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6, TTL: 64
+Relative Time: 1714758342.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758342.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6
+Classification: Benign
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6, TTL: 64
+Relative Time: 1714758342.000000, Frame Length: 139, Packet Size: 139 bytes
+Classification: Benign
+Relative Time: 1714758342.000000, Frame Length: 139, Packet Size: 139 bytes
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6
+Classification: Benign
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6, TTL: 64
+Relative Time: 1714758342.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758342.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6
+Classification: Benign
+Source IP: 34.107.221.82:80, Destination IP: 10.0.2.15:60858, IP Protocol: 6, TTL: 64
+Relative Time: 1714758342.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758342.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.107.221.82:80, Destination IP: 10.0.2.15:60858, IP Protocol: 6
+Classification: Benign
+Source IP: 34.107.221.82:80, Destination IP: 10.0.2.15:60850, IP Protocol: 6, TTL: 64
+Relative Time: 1714758342.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758342.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.107.221.82:80, Destination IP: 10.0.2.15:60850, IP Protocol: 6
+Classification: Benign
+Source IP: 34.107.221.82:80, Destination IP: 10.0.2.15:60850, IP Protocol: 6, TTL: 64
+Relative Time: 1714758342.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758342.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.107.221.82:80, Destination IP: 10.0.2.15:60850, IP Protocol: 6
+Classification: Benign
+Source IP: 34.107.221.82:80, Destination IP: 10.0.2.15:60858, IP Protocol: 6, TTL: 64
+Relative Time: 1714758342.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758342.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.107.221.82:80, Destination IP: 10.0.2.15:60858, IP Protocol: 6
+Classification: Benign
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6, TTL: 64
+Relative Time: 1714758343.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758343.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6
+Classification: Benign
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6, TTL: 64
+Relative Time: 1714758343.000000, Frame Length: 139, Packet Size: 139 bytes
+Classification: Benign
+Relative Time: 1714758343.000000, Frame Length: 139, Packet Size: 139 bytes
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6
+Classification: Benign
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6, TTL: 64
+Relative Time: 1714758343.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758343.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6
+Classification: Benign
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6, TTL: 64
+Relative Time: 1714758344.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758344.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6
+Classification: Benign
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6, TTL: 64
+Relative Time: 1714758344.000000, Frame Length: 139, Packet Size: 139 bytes
+Classification: Benign
+Relative Time: 1714758344.000000, Frame Length: 139, Packet Size: 139 bytes
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6
+Classification: Benign
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6, TTL: 64
+Relative Time: 1714758344.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758344.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6
+Classification: Benign
+Source IP: 34.120.208.123:443, Destination IP: 10.0.2.15:35250, IP Protocol: 6, TTL: 64
+Relative Time: 1714758345.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758345.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.120.208.123:443, Destination IP: 10.0.2.15:35250, IP Protocol: 6
+Classification: Benign
+Source IP: 34.120.208.123:443, Destination IP: 10.0.2.15:35250, IP Protocol: 6, TTL: 64
+Relative Time: 1714758345.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758345.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.120.208.123:443, Destination IP: 10.0.2.15:35250, IP Protocol: 6
+Classification: Benign
+Source IP: 34.120.208.123:443, Destination IP: 10.0.2.15:35250, IP Protocol: 6, TTL: 64
+Relative Time: 1714758346.000000, Frame Length: 397, Packet Size: 397 bytes
+Classification: Benign
+Relative Time: 1714758346.000000, Frame Length: 397, Packet Size: 397 bytes
+Source IP: 34.120.208.123:443, Destination IP: 10.0.2.15:35250, IP Protocol: 6
+Classification: Benign
+Source IP: 34.120.208.123:443, Destination IP: 10.0.2.15:35250, IP Protocol: 6, TTL: 64
+Relative Time: 1714758346.000000, Frame Length: 93, Packet Size: 93 bytes
+Classification: Benign
+Relative Time: 1714758346.000000, Frame Length: 93, Packet Size: 93 bytes
+Source IP: 34.120.208.123:443, Destination IP: 10.0.2.15:35250, IP Protocol: 6
+Classification: Benign
+Source IP: 34.120.208.123:443, Destination IP: 10.0.2.15:35250, IP Protocol: 6, TTL: 64
+Relative Time: 1714758346.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758346.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.120.208.123:443, Destination IP: 10.0.2.15:35250, IP Protocol: 6
+Classification: Benign
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6, TTL: 64
+Relative Time: 1714758346.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758346.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6
+Classification: Benign
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6, TTL: 64
+Relative Time: 1714758346.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758346.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6
+Classification: Benign
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6, TTL: 64
+Relative Time: 1714758346.000000, Frame Length: 187, Packet Size: 187 bytes
+Classification: Benign
+Relative Time: 1714758346.000000, Frame Length: 187, Packet Size: 187 bytes
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6
+Classification: Benign
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6, TTL: 64
+Relative Time: 1714758346.000000, Frame Length: 123, Packet Size: 123 bytes
+Classification: Benign
+Relative Time: 1714758346.000000, Frame Length: 123, Packet Size: 123 bytes
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6
+Classification: Benign
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6, TTL: 64
+Relative Time: 1714758346.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758346.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6
+Classification: Benign
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6, TTL: 64
+Relative Time: 1714758350.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758350.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6
+Classification: Benign
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6, TTL: 64
+Relative Time: 1714758350.000000, Frame Length: 140, Packet Size: 140 bytes
+Classification: Benign
+Relative Time: 1714758350.000000, Frame Length: 140, Packet Size: 140 bytes
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6
+Classification: Benign
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6, TTL: 64
+Relative Time: 1714758350.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758350.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6
+Classification: Benign
+Source IP: 34.36.165.17:443, Destination IP: 10.0.2.15:40644, IP Protocol: 6, TTL: 64
+Relative Time: 1714758350.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758350.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.36.165.17:443, Destination IP: 10.0.2.15:40644, IP Protocol: 6
+Classification: Benign
+Source IP: 34.36.165.17:443, Destination IP: 10.0.2.15:40644, IP Protocol: 6, TTL: 64
+Relative Time: 1714758350.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758350.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.36.165.17:443, Destination IP: 10.0.2.15:40644, IP Protocol: 6
+Classification: Benign
+Source IP: 34.36.165.17:443, Destination IP: 10.0.2.15:40644, IP Protocol: 6, TTL: 64
+Relative Time: 1714758350.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758350.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.36.165.17:443, Destination IP: 10.0.2.15:40644, IP Protocol: 6
+Classification: Benign
+Source IP: 34.36.165.17:443, Destination IP: 10.0.2.15:40644, IP Protocol: 6, TTL: 64
+Relative Time: 1714758350.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758350.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.36.165.17:443, Destination IP: 10.0.2.15:40644, IP Protocol: 6
+Classification: Benign
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6, TTL: 64
+Relative Time: 1714758351.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758351.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6
+Classification: Benign
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6, TTL: 64
+Relative Time: 1714758351.000000, Frame Length: 140, Packet Size: 140 bytes
+Classification: Benign
+Relative Time: 1714758351.000000, Frame Length: 140, Packet Size: 140 bytes
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6
+Classification: Benign
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6, TTL: 64
+Relative Time: 1714758351.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758351.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6
+Classification: Benign
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6, TTL: 64
+Relative Time: 1714758352.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758352.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6
+Classification: Benign
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6, TTL: 64
+Relative Time: 1714758352.000000, Frame Length: 139, Packet Size: 139 bytes
+Classification: Benign
+Relative Time: 1714758352.000000, Frame Length: 139, Packet Size: 139 bytes
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6
+Classification: Benign
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6, TTL: 64
+Relative Time: 1714758352.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758352.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6
+Classification: Benign
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6, TTL: 64
+Relative Time: 1714758353.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758353.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6
+Classification: Benign
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6, TTL: 64
+Relative Time: 1714758353.000000, Frame Length: 139, Packet Size: 139 bytes
+Classification: Benign
+Relative Time: 1714758353.000000, Frame Length: 139, Packet Size: 139 bytes
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6
+Classification: Benign
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6, TTL: 64
+Relative Time: 1714758353.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758353.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6
+Classification: Benign
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6, TTL: 64
+Relative Time: 1714758354.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758354.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6
+Classification: Benign
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6, TTL: 64
+Relative Time: 1714758354.000000, Frame Length: 139, Packet Size: 139 bytes
+Classification: Benign
+Relative Time: 1714758354.000000, Frame Length: 139, Packet Size: 139 bytes
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6
+Classification: Benign
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6, TTL: 64
+Relative Time: 1714758354.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758354.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6
+Classification: Benign
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6, TTL: 64
+Relative Time: 1714758355.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758355.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6
+Classification: Benign
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6, TTL: 64
+Relative Time: 1714758355.000000, Frame Length: 139, Packet Size: 139 bytes
+Classification: Benign
+Relative Time: 1714758355.000000, Frame Length: 139, Packet Size: 139 bytes
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6
+Classification: Benign
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6, TTL: 64
+Relative Time: 1714758355.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758355.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.120.237.76:443, Destination IP: 10.0.2.15:43302, IP Protocol: 6
+Classification: Benign
+Source IP: 34.107.243.93:443, Destination IP: 10.0.2.15:52308, IP Protocol: 6, TTL: 64
+Relative Time: 1714758360.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758360.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.107.243.93:443, Destination IP: 10.0.2.15:52308, IP Protocol: 6
+Classification: Benign
+Source IP: 34.107.243.93:443, Destination IP: 10.0.2.15:52308, IP Protocol: 6, TTL: 64
+Relative Time: 1714758360.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758360.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.107.243.93:443, Destination IP: 10.0.2.15:52308, IP Protocol: 6
+Classification: Benign
+Source IP: 34.107.243.93:443, Destination IP: 10.0.2.15:52308, IP Protocol: 6, TTL: 64
+Relative Time: 1714758360.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758360.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.107.243.93:443, Destination IP: 10.0.2.15:52308, IP Protocol: 6
+Classification: Benign
+Source IP: 34.149.100.209:443, Destination IP: 10.0.2.15:55672, IP Protocol: 6, TTL: 64
+Relative Time: 1714758363.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758363.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.149.100.209:443, Destination IP: 10.0.2.15:55672, IP Protocol: 6
+Classification: Benign
+Source IP: 34.149.100.209:443, Destination IP: 10.0.2.15:55672, IP Protocol: 6, TTL: 64
+Relative Time: 1714758363.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758363.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.149.100.209:443, Destination IP: 10.0.2.15:55672, IP Protocol: 6
+Classification: Benign
+Source IP: 34.149.100.209:443, Destination IP: 10.0.2.15:55672, IP Protocol: 6, TTL: 64
+Relative Time: 1714758363.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758363.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.149.100.209:443, Destination IP: 10.0.2.15:55672, IP Protocol: 6
+Classification: Benign
+Source IP: 34.149.100.209:443, Destination IP: 10.0.2.15:55672, IP Protocol: 6, TTL: 64
+Relative Time: 1714758363.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758363.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.149.100.209:443, Destination IP: 10.0.2.15:55672, IP Protocol: 6
+Classification: Benign
+Source IP: 35.201.103.21:443, Destination IP: 10.0.2.15:47842, IP Protocol: 6, TTL: 64
+Relative Time: 1714758366.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758366.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 35.201.103.21:443, Destination IP: 10.0.2.15:47842, IP Protocol: 6
+Classification: Benign
+Source IP: 34.98.75.36:443, Destination IP: 10.0.2.15:42500, IP Protocol: 6, TTL: 64
+Relative Time: 1714758366.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758366.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.98.75.36:443, Destination IP: 10.0.2.15:42500, IP Protocol: 6
+Classification: Benign
+Source IP: 34.98.75.36:443, Destination IP: 10.0.2.15:42500, IP Protocol: 6, TTL: 64
+Relative Time: 1714758366.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758366.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.98.75.36:443, Destination IP: 10.0.2.15:42500, IP Protocol: 6
+Classification: Benign
+Source IP: 35.201.103.21:443, Destination IP: 10.0.2.15:47842, IP Protocol: 6, TTL: 64
+Relative Time: 1714758366.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758366.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 35.201.103.21:443, Destination IP: 10.0.2.15:47842, IP Protocol: 6
+Classification: Benign
+Source IP: 35.201.103.21:443, Destination IP: 10.0.2.15:47842, IP Protocol: 6, TTL: 64
+Relative Time: 1714758366.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758366.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 35.201.103.21:443, Destination IP: 10.0.2.15:47842, IP Protocol: 6
+Classification: Benign
+Source IP: 34.98.75.36:443, Destination IP: 10.0.2.15:42500, IP Protocol: 6, TTL: 64
+Relative Time: 1714758366.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758366.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.98.75.36:443, Destination IP: 10.0.2.15:42500, IP Protocol: 6
+Classification: Benign
+Source IP: 35.201.103.21:443, Destination IP: 10.0.2.15:47842, IP Protocol: 6, TTL: 64
+Relative Time: 1714758366.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758366.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 35.201.103.21:443, Destination IP: 10.0.2.15:47842, IP Protocol: 6
+Classification: Benign
+Source IP: 34.160.144.191:443, Destination IP: 10.0.2.15:52666, IP Protocol: 6, TTL: 64
+Relative Time: 1714758367.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758367.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.160.144.191:443, Destination IP: 10.0.2.15:52666, IP Protocol: 6
+Classification: Benign
+Source IP: 34.160.144.191:443, Destination IP: 10.0.2.15:52666, IP Protocol: 6, TTL: 64
+Relative Time: 1714758367.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758367.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.160.144.191:443, Destination IP: 10.0.2.15:52666, IP Protocol: 6
+Classification: Benign
+Source IP: 34.160.144.191:443, Destination IP: 10.0.2.15:52666, IP Protocol: 6, TTL: 64
+Relative Time: 1714758367.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758367.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.160.144.191:443, Destination IP: 10.0.2.15:52666, IP Protocol: 6
+Classification: Benign
+Source IP: 34.160.144.191:443, Destination IP: 10.0.2.15:52666, IP Protocol: 6, TTL: 64
+Relative Time: 1714758367.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758367.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.160.144.191:443, Destination IP: 10.0.2.15:52666, IP Protocol: 6
+Classification: Benign
+Source IP: 35.201.103.21:443, Destination IP: 10.0.2.15:58428, IP Protocol: 6, TTL: 64
+Relative Time: 1714758369.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758369.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 35.201.103.21:443, Destination IP: 10.0.2.15:58428, IP Protocol: 6
+Classification: Benign
+Source IP: 34.98.75.36:443, Destination IP: 10.0.2.15:46838, IP Protocol: 6, TTL: 64
+Relative Time: 1714758369.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758369.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.98.75.36:443, Destination IP: 10.0.2.15:46838, IP Protocol: 6
+Classification: Benign
+Source IP: 35.201.103.21:443, Destination IP: 10.0.2.15:58428, IP Protocol: 6, TTL: 64
+Relative Time: 1714758369.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758369.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 35.201.103.21:443, Destination IP: 10.0.2.15:58428, IP Protocol: 6
+Classification: Benign
+Source IP: 34.98.75.36:443, Destination IP: 10.0.2.15:46838, IP Protocol: 6, TTL: 64
+Relative Time: 1714758369.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758369.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.98.75.36:443, Destination IP: 10.0.2.15:46838, IP Protocol: 6
+Classification: Benign
+Source IP: 35.201.103.21:443, Destination IP: 10.0.2.15:58428, IP Protocol: 6, TTL: 64
+Relative Time: 1714758369.000000, Frame Length: 266, Packet Size: 266 bytes
+Classification: Benign
+Relative Time: 1714758369.000000, Frame Length: 266, Packet Size: 266 bytes
+Source IP: 35.201.103.21:443, Destination IP: 10.0.2.15:58428, IP Protocol: 6
+Classification: Benign
+Source IP: 35.201.103.21:443, Destination IP: 10.0.2.15:58428, IP Protocol: 6, TTL: 64
+Relative Time: 1714758369.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758369.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 35.201.103.21:443, Destination IP: 10.0.2.15:58428, IP Protocol: 6
+Classification: Benign
+Source IP: 35.201.103.21:443, Destination IP: 10.0.2.15:58428, IP Protocol: 6, TTL: 64
+Relative Time: 1714758369.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758369.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 35.201.103.21:443, Destination IP: 10.0.2.15:58428, IP Protocol: 6
+Classification: Benign
+Source IP: 35.201.103.21:443, Destination IP: 10.0.2.15:58428, IP Protocol: 6, TTL: 64
+Relative Time: 1714758369.000000, Frame Length: 640, Packet Size: 640 bytes
+Classification: Benign
+Relative Time: 1714758369.000000, Frame Length: 640, Packet Size: 640 bytes
+Source IP: 35.201.103.21:443, Destination IP: 10.0.2.15:58428, IP Protocol: 6
+Classification: Benign
+Source IP: 35.201.103.21:443, Destination IP: 10.0.2.15:58428, IP Protocol: 6, TTL: 64
+Relative Time: 1714758369.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758369.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 35.201.103.21:443, Destination IP: 10.0.2.15:58428, IP Protocol: 6
+Classification: Benign
+Source IP: 34.98.75.36:443, Destination IP: 10.0.2.15:46838, IP Protocol: 6, TTL: 64
+Relative Time: 1714758369.000000, Frame Length: 266, Packet Size: 266 bytes
+Classification: Benign
+Relative Time: 1714758369.000000, Frame Length: 266, Packet Size: 266 bytes
+Source IP: 34.98.75.36:443, Destination IP: 10.0.2.15:46838, IP Protocol: 6
+Classification: Benign
+Source IP: 35.201.103.21:443, Destination IP: 10.0.2.15:58428, IP Protocol: 6, TTL: 64
+Relative Time: 1714758369.000000, Frame Length: 85, Packet Size: 85 bytes
+Classification: Benign
+Relative Time: 1714758369.000000, Frame Length: 85, Packet Size: 85 bytes
+Source IP: 35.201.103.21:443, Destination IP: 10.0.2.15:58428, IP Protocol: 6
+Classification: Benign
+Source IP: 34.98.75.36:443, Destination IP: 10.0.2.15:46838, IP Protocol: 6, TTL: 64
+Relative Time: 1714758369.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758369.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.98.75.36:443, Destination IP: 10.0.2.15:46838, IP Protocol: 6
+Classification: Benign
+Source IP: 34.98.75.36:443, Destination IP: 10.0.2.15:46838, IP Protocol: 6, TTL: 64
+Relative Time: 1714758369.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758369.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.98.75.36:443, Destination IP: 10.0.2.15:46838, IP Protocol: 6
+Classification: Benign
+Source IP: 34.98.75.36:443, Destination IP: 10.0.2.15:46838, IP Protocol: 6, TTL: 64
+Relative Time: 1714758369.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758369.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.98.75.36:443, Destination IP: 10.0.2.15:46838, IP Protocol: 6
+Classification: Benign
+Source IP: 34.98.75.36:443, Destination IP: 10.0.2.15:46838, IP Protocol: 6, TTL: 64
+Relative Time: 1714758369.000000, Frame Length: 640, Packet Size: 640 bytes
+Classification: Benign
+Relative Time: 1714758369.000000, Frame Length: 640, Packet Size: 640 bytes
+Source IP: 34.98.75.36:443, Destination IP: 10.0.2.15:46838, IP Protocol: 6
+Classification: Benign
+Source IP: 34.98.75.36:443, Destination IP: 10.0.2.15:46838, IP Protocol: 6, TTL: 64
+Relative Time: 1714758369.000000, Frame Length: 85, Packet Size: 85 bytes
+Classification: Benign
+Relative Time: 1714758369.000000, Frame Length: 85, Packet Size: 85 bytes
+Source IP: 34.98.75.36:443, Destination IP: 10.0.2.15:46838, IP Protocol: 6
+Classification: Benign
+Source IP: 34.98.75.36:443, Destination IP: 10.0.2.15:46838, IP Protocol: 6, TTL: 64
+Relative Time: 1714758369.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758369.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.98.75.36:443, Destination IP: 10.0.2.15:46838, IP Protocol: 6
+Classification: Benign
+Source IP: 34.98.75.36:443, Destination IP: 10.0.2.15:46838, IP Protocol: 6, TTL: 64
+Relative Time: 1714758369.000000, Frame Length: 207, Packet Size: 207 bytes
+Classification: Benign
+Relative Time: 1714758369.000000, Frame Length: 207, Packet Size: 207 bytes
+Source IP: 34.98.75.36:443, Destination IP: 10.0.2.15:46838, IP Protocol: 6
+Classification: Benign
+Source IP: 34.98.75.36:443, Destination IP: 10.0.2.15:46838, IP Protocol: 6, TTL: 64
+Relative Time: 1714758369.000000, Frame Length: 219, Packet Size: 219 bytes
+Classification: Benign
+Relative Time: 1714758369.000000, Frame Length: 219, Packet Size: 219 bytes
+Source IP: 34.98.75.36:443, Destination IP: 10.0.2.15:46838, IP Protocol: 6
+Classification: Benign
+Source IP: 34.98.75.36:443, Destination IP: 10.0.2.15:46838, IP Protocol: 6, TTL: 64
+Relative Time: 1714758369.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758369.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.98.75.36:443, Destination IP: 10.0.2.15:46838, IP Protocol: 6
+Classification: Benign
+Source IP: 34.160.144.191:443, Destination IP: 10.0.2.15:49736, IP Protocol: 6, TTL: 64
+Relative Time: 1714758370.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758370.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.160.144.191:443, Destination IP: 10.0.2.15:49736, IP Protocol: 6
+Classification: Benign
+Source IP: 34.160.144.191:443, Destination IP: 10.0.2.15:49736, IP Protocol: 6, TTL: 64
+Relative Time: 1714758370.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758370.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.160.144.191:443, Destination IP: 10.0.2.15:49736, IP Protocol: 6
+Classification: Benign
+Source IP: 34.160.144.191:443, Destination IP: 10.0.2.15:49736, IP Protocol: 6, TTL: 64
+Relative Time: 1714758370.000000, Frame Length: 266, Packet Size: 266 bytes
+Classification: Benign
+Relative Time: 1714758370.000000, Frame Length: 266, Packet Size: 266 bytes
+Source IP: 34.160.144.191:443, Destination IP: 10.0.2.15:49736, IP Protocol: 6
+Classification: Benign
+Source IP: 34.160.144.191:443, Destination IP: 10.0.2.15:49736, IP Protocol: 6, TTL: 64
+Relative Time: 1714758370.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758370.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.160.144.191:443, Destination IP: 10.0.2.15:49736, IP Protocol: 6
+Classification: Benign
+Source IP: 34.160.144.191:443, Destination IP: 10.0.2.15:49736, IP Protocol: 6, TTL: 64
+Relative Time: 1714758370.000000, Frame Length: 640, Packet Size: 640 bytes
+Classification: Benign
+Relative Time: 1714758370.000000, Frame Length: 640, Packet Size: 640 bytes
+Source IP: 34.160.144.191:443, Destination IP: 10.0.2.15:49736, IP Protocol: 6
+Classification: Benign
+Source IP: 34.160.144.191:443, Destination IP: 10.0.2.15:49736, IP Protocol: 6, TTL: 64
+Relative Time: 1714758370.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758370.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.160.144.191:443, Destination IP: 10.0.2.15:49736, IP Protocol: 6
+Classification: Benign
+Source IP: 34.160.144.191:443, Destination IP: 10.0.2.15:49736, IP Protocol: 6, TTL: 64
+Relative Time: 1714758370.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758370.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.160.144.191:443, Destination IP: 10.0.2.15:49736, IP Protocol: 6
+Classification: Benign
+Source IP: 34.160.144.191:443, Destination IP: 10.0.2.15:49736, IP Protocol: 6, TTL: 64
+Relative Time: 1714758370.000000, Frame Length: 85, Packet Size: 85 bytes
+Classification: Benign
+Relative Time: 1714758370.000000, Frame Length: 85, Packet Size: 85 bytes
+Source IP: 34.160.144.191:443, Destination IP: 10.0.2.15:49736, IP Protocol: 6
+Classification: Benign
+Source IP: 34.160.144.191:443, Destination IP: 10.0.2.15:49736, IP Protocol: 6, TTL: 64
+Relative Time: 1714758370.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758370.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.160.144.191:443, Destination IP: 10.0.2.15:49736, IP Protocol: 6
+Classification: Benign
+Source IP: 34.160.144.191:443, Destination IP: 10.0.2.15:49736, IP Protocol: 6, TTL: 64
+Relative Time: 1714758370.000000, Frame Length: 380, Packet Size: 380 bytes
+Classification: Benign
+Relative Time: 1714758370.000000, Frame Length: 380, Packet Size: 380 bytes
+Source IP: 34.160.144.191:443, Destination IP: 10.0.2.15:49736, IP Protocol: 6
+Classification: Benign
+Source IP: 34.160.144.191:443, Destination IP: 10.0.2.15:49736, IP Protocol: 6, TTL: 64
+Relative Time: 1714758370.000000, Frame Length: 5517, Packet Size: 5517 bytes
+Classification: Large Packet Size, Likely Suspicious
+Relative Time: 1714758370.000000, Frame Length: 5517, Packet Size: 5517 bytes
+Source IP: 34.160.144.191:443, Destination IP: 10.0.2.15:49736, IP Protocol: 6
+Classification: Large Packet Size, Likely Suspicious
+Source IP: 34.160.144.191:443, Destination IP: 10.0.2.15:49736, IP Protocol: 6, TTL: 64
+Relative Time: 1714758370.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758370.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.160.144.191:443, Destination IP: 10.0.2.15:49736, IP Protocol: 6
+Classification: Benign
+Source IP: 34.160.90.233:443, Destination IP: 10.0.2.15:56134, IP Protocol: 6, TTL: 64
+Relative Time: 1714758370.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758370.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.160.90.233:443, Destination IP: 10.0.2.15:56134, IP Protocol: 6
+Classification: Benign
+Source IP: 65.9.112.15:443, Destination IP: 10.0.2.15:33520, IP Protocol: 6, TTL: 64
+Relative Time: 1714758370.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758370.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 65.9.112.15:443, Destination IP: 10.0.2.15:33520, IP Protocol: 6
+Classification: Benign
+Source IP: 34.160.90.233:443, Destination IP: 10.0.2.15:56134, IP Protocol: 6, TTL: 64
+Relative Time: 1714758370.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758370.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.160.90.233:443, Destination IP: 10.0.2.15:56134, IP Protocol: 6
+Classification: Benign
+Source IP: 34.160.90.233:443, Destination IP: 10.0.2.15:56134, IP Protocol: 6, TTL: 64
+Relative Time: 1714758370.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758370.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.160.90.233:443, Destination IP: 10.0.2.15:56134, IP Protocol: 6
+Classification: Benign
+Source IP: 34.160.90.233:443, Destination IP: 10.0.2.15:56134, IP Protocol: 6, TTL: 64
+Relative Time: 1714758370.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758370.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.160.90.233:443, Destination IP: 10.0.2.15:56134, IP Protocol: 6
+Classification: Benign
+Source IP: 65.9.112.15:443, Destination IP: 10.0.2.15:33520, IP Protocol: 6, TTL: 64
+Relative Time: 1714758370.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758370.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 65.9.112.15:443, Destination IP: 10.0.2.15:33520, IP Protocol: 6
+Classification: Benign
+Source IP: 65.9.112.15:443, Destination IP: 10.0.2.15:33520, IP Protocol: 6, TTL: 64
+Relative Time: 1714758370.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758370.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 65.9.112.15:443, Destination IP: 10.0.2.15:33520, IP Protocol: 6
+Classification: Benign
+Source IP: 65.9.112.15:443, Destination IP: 10.0.2.15:33520, IP Protocol: 6, TTL: 64
+Relative Time: 1714758370.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758370.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 65.9.112.15:443, Destination IP: 10.0.2.15:33520, IP Protocol: 6
+Classification: Benign
+Source IP: 35.244.181.201:443, Destination IP: 10.0.2.15:38658, IP Protocol: 6, TTL: 64
+Relative Time: 1714758371.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758371.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 35.244.181.201:443, Destination IP: 10.0.2.15:38658, IP Protocol: 6
+Classification: Benign
+Source IP: 35.244.181.201:443, Destination IP: 10.0.2.15:38658, IP Protocol: 6, TTL: 64
+Relative Time: 1714758371.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758371.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 35.244.181.201:443, Destination IP: 10.0.2.15:38658, IP Protocol: 6
+Classification: Benign
+Source IP: 35.244.181.201:443, Destination IP: 10.0.2.15:38658, IP Protocol: 6, TTL: 64
+Relative Time: 1714758371.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758371.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 35.244.181.201:443, Destination IP: 10.0.2.15:38658, IP Protocol: 6
+Classification: Benign
+Source IP: 35.244.181.201:443, Destination IP: 10.0.2.15:38658, IP Protocol: 6, TTL: 64
+Relative Time: 1714758371.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758371.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 35.244.181.201:443, Destination IP: 10.0.2.15:38658, IP Protocol: 6
+Classification: Benign
+Source IP: 34.160.144.191:443, Destination IP: 10.0.2.15:40786, IP Protocol: 6, TTL: 64
+Relative Time: 1714758378.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758378.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.160.144.191:443, Destination IP: 10.0.2.15:40786, IP Protocol: 6
+Classification: Benign
+Source IP: 34.149.100.209:443, Destination IP: 10.0.2.15:38372, IP Protocol: 6, TTL: 64
+Relative Time: 1714758378.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758378.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.149.100.209:443, Destination IP: 10.0.2.15:38372, IP Protocol: 6
+Classification: Benign
+Source IP: 34.160.144.191:443, Destination IP: 10.0.2.15:40786, IP Protocol: 6, TTL: 64
+Relative Time: 1714758378.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758378.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.160.144.191:443, Destination IP: 10.0.2.15:40786, IP Protocol: 6
+Classification: Benign
+Source IP: 34.160.144.191:443, Destination IP: 10.0.2.15:40786, IP Protocol: 6, TTL: 64
+Relative Time: 1714758378.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758378.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.160.144.191:443, Destination IP: 10.0.2.15:40786, IP Protocol: 6
+Classification: Benign
+Source IP: 34.149.100.209:443, Destination IP: 10.0.2.15:38372, IP Protocol: 6, TTL: 64
+Relative Time: 1714758378.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758378.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.149.100.209:443, Destination IP: 10.0.2.15:38372, IP Protocol: 6
+Classification: Benign
+Source IP: 34.149.100.209:443, Destination IP: 10.0.2.15:38372, IP Protocol: 6, TTL: 64
+Relative Time: 1714758378.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758378.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.149.100.209:443, Destination IP: 10.0.2.15:38372, IP Protocol: 6
+Classification: Benign
+Source IP: 34.160.144.191:443, Destination IP: 10.0.2.15:40786, IP Protocol: 6, TTL: 64
+Relative Time: 1714758378.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758378.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.160.144.191:443, Destination IP: 10.0.2.15:40786, IP Protocol: 6
+Classification: Benign
+Source IP: 34.149.100.209:443, Destination IP: 10.0.2.15:38372, IP Protocol: 6, TTL: 64
+Relative Time: 1714758378.000000, Frame Length: 60, Packet Size: 60 bytes
+Classification: Benign
+Relative Time: 1714758378.000000, Frame Length: 60, Packet Size: 60 bytes
+Source IP: 34.149.100.209:443, Destination IP: 10.0.2.15:38372, IP Protocol: 6
+Classification: Benign
