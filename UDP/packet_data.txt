@@ -1,3 +1,0 @@
-Source IP: 127.0.0.1:41833, Destination IP: 127.0.0.53:53, IP Protocol: 17
-Relative Time: 1715756457.000000, Frame Length: 86, Packet Size: 86 bytes
-Classification: Benign
