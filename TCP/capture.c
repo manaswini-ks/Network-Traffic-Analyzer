@@ -1,458 +1,168 @@
 #include <stdio.h>
-
 #include <stdlib.h>
-
 #include <string.h>
-
 #include <stdint.h>
-
 #include <netinet/if_ether.h>
-
 #include <netinet/ip.h>
-
 #include <netinet/tcp.h>
-
 #include <pcap.h>
-
 #include <signal.h>
-
 #include <time.h>
-
 #include <unistd.h>
-
 #include "custom_algorithm.h"
 
-
-
-FILE *data_txt_file;  // File pointer for packet data text file
-
-FILE *data_csv_file;  // File pointer for packet data CSV file
-
-pcap_dumper_t *dumper = NULL;  // Declare pcap dumper globally
-
-
-
+FILE *data_txt_file;
+FILE *data_csv_file;
+pcap_dumper_t *dumper = NULL;
+unsigned int packet_number = 0;
+	
 #define MAX_CLASSIFICATION_SIZE 173000
-
-
-
 volatile sig_atomic_t is_interrupted = 0;
-
-int headings_printed = 0; // Flag to track if headings have been printed in CSV file
-
-
+int headings_printed = 0;
 
 void handle_interrupt(int signo) {
-
     is_interrupted = 1;
-
-
-
-    // Close the pcap dump file on interruption
-
-    if (dumper) {
-
-        pcap_dump_close(dumper);
-
-    }
-
-
-
-    // Close the packet data text file
-
-    if (data_txt_file) {
-
-        fclose(data_txt_file);
-
-    }
-
-
-
-    // Close the packet data CSV file
-
-    if (data_csv_file) {
-
-        fclose(data_csv_file);
-
-    }
-
-
-
+    if (dumper) pcap_dump_close(dumper);
+    if (data_txt_file) fclose(data_txt_file);
+    if (data_csv_file) fclose(data_csv_file);
     printf("Capture terminated.\n");
-
     exit(EXIT_SUCCESS);
-
 }
 
-
-
+void format_time(struct timeval ts, char *buffer, size_t buffer_size) {
+    struct tm *tm_info = localtime(&ts.tv_sec);
+    strftime(buffer, buffer_size, "%b %d %Y %H:%M:%S", tm_info);
+    snprintf(buffer + strlen(buffer), buffer_size - strlen(buffer), ".%06ld IST", ts.tv_usec);
+}
 uint16_t calculate_tcp_checksum(struct iphdr *pIph, struct tcphdr *ipPayload) {
-
-    register unsigned long sum = 0;
-
+    unsigned long sum = 0;
     unsigned short tcpLen = ntohs(pIph->tot_len) - (pIph->ihl << 2);
-
     struct tcphdr *tcphdrp = ipPayload;
 
-
-
-    // Add the pseudo-header
-
-    // Source IP address
-
     sum += (pIph->saddr >> 16) & 0xFFFF;
-
     sum += (pIph->saddr) & 0xFFFF;
-
-
-
-    // Destination IP address
-
     sum += (pIph->daddr >> 16) & 0xFFFF;
-
     sum += (pIph->daddr) & 0xFFFF;
-
-
-
-    // Protocol and reserved: 6
-
     sum += htons(IPPROTO_TCP);
-
-
-
-    // Length
-
     sum += htons(tcpLen);
-
-
-
-    // Initialize checksum to 0
-
     tcphdrp->check = 0;
 
-
-
-    // Add the TCP header and payload
-
     unsigned short *ipPayload16 = (unsigned short *)ipPayload;
-
     while (tcpLen > 1) {
-
         sum += *ipPayload16++;
-
         tcpLen -= 2;
-
     }
-
-
-
-    // If any bytes left, pad the bytes and add
 
     if (tcpLen > 0) {
-
         sum += ((*ipPayload16) & htons(0xFF00));
-
     }
-
-
-
-    // Fold 32-bit sum to 16 bits: add carrier to result
 
     while (sum >> 16) {
-
         sum = (sum & 0xFFFF) + (sum >> 16);
-
     }
 
-
-
-    // One's complement
-
     sum = ~sum;
-
-
-
-    // Convert checksum to network byte order
-
     sum = htons((unsigned short)sum);
-
-
-
-    // Set computation result
-
     tcphdrp->check = (unsigned short)sum;
-
     return (unsigned short)sum;
-
 }
-
-
 
 void packet_handler(const u_char *packet, size_t packet_len, struct pcap_pkthdr *pkthdr) {
-
-    // Assuming Ethernet + IP + TCP header structure
-
     struct ethhdr *eth_header = (struct ethhdr *)packet;
-
     struct iphdr *ip_header = (struct iphdr *)(packet + sizeof(struct ethhdr));
-
     struct tcphdr *tcp_header = (struct tcphdr *)(packet + sizeof(struct ethhdr) + sizeof(struct iphdr));
-
-
+    size_t ip_header_length = ip_header->ihl * 4;
 
     if (ip_header->protocol == IPPROTO_TCP) {
+        size_t tcp_header_length = tcp_header->doff * 4;
+        size_t headers_length = ip_header_length + tcp_header_length;
+        size_t payload_length = packet_len - headers_length;
 
-        // Extract required fields
-
-        char src_ip[INET_ADDRSTRLEN];
-
-        char dst_ip[INET_ADDRSTRLEN];
-
+        char src_ip[INET_ADDRSTRLEN], dst_ip[INET_ADDRSTRLEN];
         inet_ntop(AF_INET, &ip_header->saddr, src_ip, INET_ADDRSTRLEN);
-
         inet_ntop(AF_INET, &ip_header->daddr, dst_ip, INET_ADDRSTRLEN);
 
-        uint16_t chs= ntohs(tcp_header->check);
-
-        // Calculate TCP checksum
-
-
-
-        // Call custom_algorithm with the extracted fields
-
+        uint16_t chs = ntohs(tcp_header->check);
+        uint8_t ttl = ip_header->ttl;
         char classification[MAX_CLASSIFICATION_SIZE];
-
         size_t classification_size = sizeof(classification);
+        
+        printf("TCP packet captured\n");
 
-        custom_algorithm(tcp_header->th_flags, src_ip, ntohs(tcp_header->source), dst_ip, ntohs(tcp_header->dest),
-
-                         ip_header->protocol, pkthdr->ts.tv_sec + pkthdr->ts.tv_usec / 1000000.0, packet_len,
-
-                         classification, classification_size);
-
-
-
-        // Open packet data text file for appending
-
-        data_txt_file = fopen("packet_data.txt", "a");
-
-        if (!data_txt_file) {
-
-            fprintf(stderr, "Error opening packet data text file for writing\n");
-
-            exit(EXIT_FAILURE);
-
-        }
-
-
-
-        // Write packet data to text file
-
-        fprintf(data_txt_file, "Relative Time: %lf, Frame Length: %u, Packet Size: %zu bytes\n",
-
-                pkthdr->ts.tv_sec + pkthdr->ts.tv_usec / 1000000.0, (unsigned int)pkthdr->caplen, packet_len);
-
-        fprintf(data_txt_file, "Source IP: %s:%u, Destination IP: %s:%u, IP Protocol: %u\n", src_ip,
-
-                ntohs(tcp_header->source), dst_ip, ntohs(tcp_header->dest), ip_header->protocol);
-
-        fprintf(data_txt_file, "Classification: %s\n", classification); // Append classification
-
-
-
-        // Close packet data text file
-
-        fclose(data_txt_file);
-
-
-
-        // Open packet data CSV file for appending
+        custom_algorithm(tcp_header->th_flags, src_ip, ntohs(tcp_header->source), dst_ip, ntohs(tcp_header->dest),ip_header->protocol, pkthdr->ts.tv_sec + pkthdr->ts.tv_usec / 1000000.0, packet_len,
+        classification, classification_size);
 
         data_csv_file = fopen("packet_data.csv", "a");
-
         if (!data_csv_file) {
-
             fprintf(stderr, "Error opening packet data CSV file for writing\n");
-
             exit(EXIT_FAILURE);
-
+        }
+packet_number++;
+        if (!headings_printed) {
+            fprintf(data_csv_file, "Packet Number,Timestamp,Relative Time,Packet Size,Payload Length,Source IP,Source Port,Destination IP,Destination Port,IP Protocol,TCP Flags,TTL,Src Checksum,Dst Checksum,Validity\n");
+            headings_printed = 1;
         }
 
+ char formatted_time[64];
+        format_time(pkthdr->ts, formatted_time, sizeof(formatted_time));
+        const char *validity = (chs == calculate_tcp_checksum(ip_header, tcp_header)) ? "valid" : "invalid";
+        char flag_str[10];
+        snprintf(flag_str, sizeof(flag_str), "0x%04X", ntohs(tcp_header->th_flags));
 
-
-        // Write packet data to CSV file
-
-        // Write packet data to CSV file
-
-if (!headings_printed) { // Check if the headings have been printed
-
-    fprintf(data_csv_file, "Relative Time,Frame Length,Packet Size,Source IP,Source Port,Destination IP,Destination Port,IP Protocol,TCP Flags,Src Checksum,Dst Checksum,Classification,Validity\n");
-
-    headings_printed = 1; // Set flag to indicate headings have been printed
-
-}
-
-
-
-// Determine validity
-
-const char *validity = (chs == calculate_tcp_checksum(ip_header, tcp_header)) ? "valid" : "invalid";
-
-
-
-// Convert TCP flags to hexadecimal representation
-
-char flag_str[10];
-
-snprintf(flag_str, sizeof(flag_str), "0x%04X", ntohs(tcp_header->th_flags));
-
-
-
-// Print individual TCP flags in the "TCP Flags" column
-
-fprintf(data_csv_file, "%lf,%u,%zu,%s,%u,%s,%u,%u,%s,0x%04X,0x%04X,%s,%s\n",
-
-        pkthdr->ts.tv_sec + pkthdr->ts.tv_usec / 1000000.0, (unsigned int)pkthdr->caplen, packet_len,
-
-        src_ip, ntohs(tcp_header->source), dst_ip, ntohs(tcp_header->dest), ip_header->protocol,
-
-        flag_str, chs, calculate_tcp_checksum(ip_header, tcp_header), classification, validity);
-
-
-
-        // Close packet data CSV file
+        fprintf(data_csv_file, "%u,%s,%lf,%zu,%zu,%s,%u,%s,%u,%u,%s,%u,0x%04X,0x%04X,%s\n",packet_number,formatted_time,
+                pkthdr->ts.tv_sec + pkthdr->ts.tv_usec / 1000000.0, packet_len, 
+                payload_length, src_ip,
+                ntohs(tcp_header->source), dst_ip, ntohs(tcp_header->dest), ip_header->protocol,
+                flag_str, ttl, chs, calculate_tcp_checksum(ip_header, tcp_header), validity);
 
         fclose(data_csv_file);
 
-
-
-        // Write the packet to the pcap dump
-
-
-
-
-
-    // Write the packet to the pcap dump file
-
-    pcap_dump((u_char *)dumper, pkthdr, packet);
-
+        pcap_dump((u_char *)dumper, pkthdr, packet);
+    }
 }
-
-}
-
-
-
-
 
 int main() {
+    int raw_socket;
+    struct sockaddr_in saddr;
+    socklen_t saddr_len = sizeof(saddr);
+    uint8_t packet_buffer[65536];
+    char errbuf[PCAP_ERRBUF_SIZE];
 
-int raw_socket;
-
-struct sockaddr_in saddr;
-
-socklen_t saddr_len = sizeof(saddr);
-
-uint8_t packet_buffer[65536]; // Adjust this size based on your needs
-
-char errbuf[PCAP_ERRBUF_SIZE];
-
-// Open a raw socket
-
-if ((raw_socket = socket(AF_PACKET, SOCK_RAW, htons(ETH_P_IP))) == -1) {
-
-    perror("Error creating raw socket");
-
-    exit(EXIT_FAILURE);
-
-}
-
-
-
-// Open a pcap dump file for writing
-
-pcap_t *handle = pcap_open_dead(DLT_EN10MB, 65536);
-
-dumper = pcap_dump_open(handle, "socket_capture.pcap");
-
-if (!dumper) {
-
-    fprintf(stderr, "Error opening pcap dump file for writing\n");
-
-    exit(EXIT_FAILURE);
-
-}
-
-
-
-// Register the interrupt signal handler
-
-signal(SIGINT, handle_interrupt);
-
-
-
-// Print a message indicating the capture has started
-
-printf("Capture started. Press Ctrl+C to stop.\n");
-
-
-
-// Capture packets and handle them using packet_handler
-
-while (!is_interrupted) {
-
-    ssize_t packet_size = recvfrom(raw_socket, packet_buffer, sizeof(packet_buffer), 0,
-
-                                   (struct sockaddr *)&saddr, &saddr_len);
-
-    if (packet_size == -1) {
-
-        perror("Error receiving packet");
-
-        close(raw_socket);
-
+    if ((raw_socket = socket(AF_PACKET, SOCK_RAW, htons(ETH_P_IP))) == -1) {
+        perror("Error creating raw socket");
         exit(EXIT_FAILURE);
-
     }
 
+    pcap_t *handle = pcap_open_dead(DLT_EN10MB, 65536);
+    dumper = pcap_dump_open(handle, "socket_capture.pcap");
+    if (!dumper) {
+        fprintf(stderr, "Error opening pcap dump file for writing\n");
+        exit(EXIT_FAILURE);
+    }
 
+    signal(SIGINT, handle_interrupt);
+    printf("Capture started. Press Ctrl+C to stop.\n");
 
-    struct pcap_pkthdr pkthdr;
+    while (!is_interrupted) {
+        ssize_t packet_size = recvfrom(raw_socket, packet_buffer, sizeof(packet_buffer), 0,
+                                       (struct sockaddr *)&saddr, &saddr_len);
+        if (packet_size == -1) {
+            perror("Error receiving packet");
+            close(raw_socket);
+            exit(EXIT_FAILURE);
+        }
 
-    pkthdr.ts.tv_sec = time(NULL);
+        struct pcap_pkthdr pkthdr;
+        pkthdr.ts.tv_sec = time(NULL);
+        pkthdr.ts.tv_usec = 0;
+        pkthdr.len = packet_size;
+        pkthdr.caplen = packet_size;
 
-    pkthdr.ts.tv_usec = 0;
+        packet_handler(packet_buffer, packet_size, &pkthdr);
+    }
 
-    pkthdr.len = packet_size;
-
-    pkthdr.caplen = packet_size;
-
-
-
-    // Call packet_handler with the received packet
-
-    packet_handler(packet_buffer, packet_size, &pkthdr);
-
+    pcap_dump_close(dumper);
+    close(raw_socket);
+    printf("Capture terminated.\n");
+    return 0;
 }
-
-
-
-// Close the pcap dump file
-
-pcap_dump_close(dumper);
-
-
-
-// Close the raw socket
-
-close(raw_socket);
-
-
-
-printf("Capture terminated.\n");
-
-
-
-return 0;
-
-}
-
