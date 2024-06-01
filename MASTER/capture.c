@@ -17,13 +17,15 @@
 #include <netinet/in.h>
 #include <netinet/if_ether.h>
 #include <arpa/inet.h>
+#include <netinet/ip_icmp.h>
 
 int raw_socket;
 struct sockaddr_in saddr;
 socklen_t saddr_len = sizeof(saddr);
 uint8_t packet_buffer[65536];
 //pcap_dumper_t *dumper = NULL;
-
+FILE *data_file;
+FILE *ip_file;
 FILE *tcp_data_txt_file;
 FILE *tcp_data_csv_file;
 FILE *udp_data_txt_file;
@@ -114,6 +116,99 @@ uint16_t compute_udp_checksum(struct iphdr *pIph, unsigned short *ipPayload) {
     sum = ~sum;
     udphdrp->check = ((unsigned short)sum == 0x0000) ? 0xFFFF : (unsigned short)sum;
     return (unsigned short)sum;  // Return the checksum value
+}
+
+uint16_t calculate_checksum(uint16_t *ptr, int nbytes) {
+
+    uint32_t sum = 0;
+    while (nbytes > 1) {
+        sum += *ptr++;
+        nbytes -= 2;
+    }
+    if (nbytes == 1) {
+        sum += *((uint8_t*)ptr);
+    }
+    while (sum >> 16) {
+        sum = (sum & 0xFFFF) + (sum >> 16);
+    }
+    return ~sum;
+}
+
+// Signal handler to handle interruption (Ctrl+C)
+
+/*void handle_interrupt(int signo) {
+    is_interrupted = 1;
+    // Close the pcap dump file on interruption
+    if (dumper) {
+        pcap_dump_close(dumper);
+    }
+    printf("Capture terminated.\n");
+    exit(EXIT_SUCCESS);
+}*/
+
+// Function to handle IP packets
+void ip_handler(const u_char *packet, size_t packet_len, const struct pcap_pkthdr *pkthdr, FILE *output_file) {
+    struct ethhdr *eth_header = (struct ethhdr *)packet;
+    struct iphdr *ip_header = (struct iphdr *)(packet + sizeof(struct ethhdr));
+
+    char src_ip[INET_ADDRSTRLEN];
+    char dst_ip[INET_ADDRSTRLEN];
+    inet_ntop(AF_INET, &ip_header->saddr, src_ip, INET_ADDRSTRLEN);
+    inet_ntop(AF_INET, &ip_header->daddr, dst_ip, INET_ADDRSTRLEN);
+
+    int more_fragments = (ntohs(ip_header->frag_off) & IP_MF) != 0;
+    // Write IP packet information to the output file
+    fprintf(output_file, "%lf,%u,%zu,%s,%s,%u,%u,%u,%u,%u,%u,%d,%u,%u,%u\n",
+            pkthdr->ts.tv_sec + pkthdr->ts.tv_usec / 1000000.0,
+            (unsigned int)pkthdr->caplen,
+            packet_len,
+            src_ip,
+            dst_ip,
+            ip_header->protocol,
+            (unsigned int)ip_header->version,
+            (unsigned int)(ip_header->ihl * 4),
+            (unsigned int)((ip_header->tos & 0xfc) >> 2),
+            ntohs(ip_header->tot_len),
+            ntohs(ip_header->id),
+            more_fragments,
+            (unsigned int)(ntohs(ip_header->frag_off) & 0x1fff),
+            (unsigned int)ip_header->ttl,
+            (unsigned int)ip_header->check
+    );
+}
+// Function to handle ICMP packets
+void icmp_handler(const u_char *packet, size_t packet_len, const struct pcap_pkthdr *pkthdr, FILE *data_file) {
+    struct ip *ip_header = (struct ip*)(packet + sizeof(struct ether_header));
+
+   // Check if the packet is an ICMP packet
+    if (ip_header->ip_p == IPPROTO_ICMP) {
+        struct icmp *icmp_header = (struct icmp*)(packet + sizeof(struct ether_header) + ip_header->ip_hl * 4);
+        char src_ip[INET_ADDRSTRLEN];
+        char dst_ip[INET_ADDRSTRLEN];
+        inet_ntop(AF_INET, &ip_header->ip_src, src_ip, INET_ADDRSTRLEN);
+        inet_ntop(AF_INET, &ip_header->ip_dst, dst_ip, INET_ADDRSTRLEN);
+
+        // Calculate checksum for validation
+
+       uint16_t stored_checksum = icmp_header->icmp_cksum;
+        icmp_header->icmp_cksum = 0;
+        uint16_t checksum = calculate_checksum((uint16_t*)icmp_header, ntohs(ip_header->ip_len) - ip_header->ip_hl * 4);
+        icmp_header->icmp_cksum = stored_checksum;
+
+        // Get timestamp for the packet
+        time_t x = pkthdr->ts.tv_sec + pkthdr->ts.tv_usec / 100000.0;
+        struct tm *t = localtime(&x);
+        char time[26];
+        strftime(time, sizeof(time), "%b %d %H:%M", t);
+        int total_len = ntohs(ip_header->ip_len);
+        int ip_header_length = ip_header->ip_hl * 4;
+        int payload = total_len - ip_header_length - 8;
+
+       // Write ICMP packet information to the CSV file
+        fprintf(data_file, "%s,%ld,%s,-,%s,-,1,%d,%d,%d,0x%X,0x%X,Valid,%d\n",
+                time, x, src_ip, dst_ip, (unsigned int)pkthdr->caplen, (unsigned int)pkthdr->caplen, payload, checksum, stored_checksum, ip_header->ip_ttl);
+        fflush(data_file);
+    }
 }
 
 void handle_tcp_packet(const u_char *packet, size_t packet_len, const struct pcap_pkthdr *pkthdr) {
@@ -228,7 +323,8 @@ void packet_handler(u_char *user_data, const struct pcap_pkthdr *pkthdr, const u
             handle_udp_packet(packet, pkthdr->len, pkthdr);
         }
     }
-
+     ip_handler(packet, pkthdr->len, pkthdr, ip_file);
+    icmp_handler(packet, pkthdr->len, pkthdr, data_file);
     packet_number++;
 }
 int main() {
@@ -249,7 +345,20 @@ int main() {
 
     // Print a message indicating the capture has started
     printf("Capture started. Press Ctrl+C to stop.\n");
+  ip_file = fopen("ip_data.csv", "w");
+    if (!ip_file) {
+        fprintf(stderr, "Error opening IP data file for writing\n");
+        exit(EXIT_FAILURE);
+    }
+    fprintf(ip_file, "Timestamp,Caplen,PacketLen,SrcIP,DestIP,Protocol,Version,IHL,TOS,TotalLen,ID,MoreFragments,FragmentOffset,TTL,Checksum\n");
 
+   // Open CSV file for writing ICMP packet data
+    data_file = fopen("icmp_data.csv", "w");
+    if (!data_file) {
+        fprintf(stderr, "Error opening packet data file for writing\n");
+        exit(EXIT_FAILURE);
+   }
+    fprintf(data_file, "Timestamp,Relative Time,Source IP,Source Port,Destination IP,Destination Port,IP Protocol,Frame Length,Packet Size,Payload Size,Src Checksum,Dest Checksum,Validity,TTL\n");
     // Register the interrupt signal handler
     signal(SIGINT, handle_interrupt);
 
