@@ -710,9 +710,11 @@ void packet_handler(u_char *user_data, const struct pcap_pkthdr *pkthdr, const u
 
             uint16_t payload_size = pkthdr->len - sizeof(struct ethhdr) - sizeof(struct iphdr) - sizeof(struct udphdr);
 
+            if((src_port==53) || (dest_port==53))
 
 
-            fprintf(packet_data_file, "%ld.%06ld,%s,%u,%s,%u,UDP,%d,%u\n",
+
+            fprintf(packet_data_file, "%ld.%06ld,%s,%u,%s,%u,DNS,%d,%u\n",
 
                     pkthdr->ts.tv_sec, pkthdr->ts.tv_usec,
 
@@ -721,6 +723,34 @@ void packet_handler(u_char *user_data, const struct pcap_pkthdr *pkthdr, const u
                     inet_ntoa(dest_addr), dest_port,
 
                     pkthdr->len, payload_size);
+
+                    
+
+            else if((src_port==443) || (dest_port==443))
+
+
+
+            fprintf(packet_data_file, "%ld.%06ld,%s,%u,%s,%u,QUIC,%d,%u\n",
+
+                    pkthdr->ts.tv_sec, pkthdr->ts.tv_usec,
+
+                    inet_ntoa(src_addr), src_port,
+
+                    inet_ntoa(dest_addr), dest_port,
+
+                    pkthdr->len, payload_size);
+
+            else
+
+               fprintf(packet_data_file, "%ld.%06ld,%s,%u,%s,%u,UDP,%d,%u\n",
+
+                    pkthdr->ts.tv_sec, pkthdr->ts.tv_usec,
+
+                    inet_ntoa(src_addr), src_port,
+
+                    inet_ntoa(dest_addr), dest_port,
+
+                    pkthdr->len, payload_size);     
 
             handle_udp_packet(packet, pkthdr->len, pkthdr);
 
