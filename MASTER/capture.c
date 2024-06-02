@@ -628,7 +628,7 @@ void packet_handler(u_char *user_data, const struct pcap_pkthdr *pkthdr, const u
 
     if (packet_number == 0) {
 
-        packet_data_file = fopen("packet_data.csv", "w");
+        packet_data_file = fopen("packet_data.csv", "a");
 
         if (packet_data_file == NULL) {
 
@@ -812,7 +812,7 @@ int main() {
 
     printf("Capture started. Press Ctrl+C to stop.\n");
 
-  ip_file = fopen("ip_data.csv", "w");
+  ip_file = fopen("ip_data.csv", "a");
 
     if (!ip_file) {
 
@@ -828,7 +828,7 @@ int main() {
 
    // Open CSV file for writing ICMP packet data
 
-    data_file = fopen("icmp_data.csv", "w");
+    data_file = fopen("icmp_data.csv", "a");
 
     if (!data_file) {
 
