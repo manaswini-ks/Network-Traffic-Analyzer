@@ -441,7 +441,7 @@ void handle_udp_packet(const u_char *packet, size_t packet_len, const struct pca
                 formatted_time, pkthdr->ts.tv_sec + pkthdr->ts.tv_usec / 1000000.0, packet_len,
                 src_ip, ntohs(udp_header->source), dst_ip, ntohs(udp_header->dest), ip_header->protocol,
 
-                ntohs(udp_header->check), calculated_checksum, validity);
+                ntohs(udp_header->check), ntohs(calculated_checksum), validity);
 
         fclose(udp_data_csv_file);
         pcap_dump((u_char *)dumper, pkthdr, packet);
